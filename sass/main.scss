@@ -1,5 +1,7 @@
-body {
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./base/reset";
+@import "./base/body";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/header"
