@@ -1,0 +1,25 @@
+header {
+    background-color: #242B33;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav__item {
+    @extend %list;
+}
+
+.site-nav__link {
+    @extend %link;
+    color: $primary-color-text;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+}
