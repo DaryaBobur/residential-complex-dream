@@ -1,0 +1,16 @@
+.logo {
+  @extend %link;
+    color: $primary-color-text;
+}
+
+.logo__name {
+    font-size: 36px;
+    line-height: 1.5;
+    text-shadow: $logo-text-shadow;
+}
+
+.logo__desc {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.12em;
+}
