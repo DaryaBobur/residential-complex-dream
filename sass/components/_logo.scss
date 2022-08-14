@@ -1,6 +1,9 @@
 .logo {
   @extend %link;
     color: $primary-color-text;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .logo__name {
