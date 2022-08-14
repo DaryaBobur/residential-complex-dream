@@ -1,10 +1,10 @@
-.site-nav__item {
+.site-nav__item, .hero__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.logo, .site-nav__link {
+.logo, .site-nav__link, .hero__tel {
   text-decoration: none;
 }
 
@@ -53,6 +53,8 @@ body {
 
 .logo {
   color: white;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .logo__name {
@@ -81,9 +83,57 @@ header {
   display: flex;
 }
 
+.site-nav__item:not(:last-child) {
+  margin-right: 39px;
+}
+
 .site-nav__link {
   color: white;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.05em;
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
+.hero__title {
+  font-family: Playfair Display, sans-serif;
+  color: #d4c17f;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.33;
+  text-align: center;
+  padding-top: 220px;
+  padding-bottom: 340px;
+}
+
+.hero {
+  background-image: linear-gradient(to top, #242b33, rgba(45, 52, 60, 0.38), #242b33), url("/images/hero.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, #242b33, rgba(45, 52, 60, 0.38), #242b33), url("/images/hero@2x.jpg");
+  }
+}
+
+.hero__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 129px;
+}
+
+.hero__address {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 98px;
+}
+
+.hero__tel {
+  color: white;
 }
