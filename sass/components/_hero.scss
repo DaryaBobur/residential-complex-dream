@@ -1,0 +1,53 @@
+.hero__title {
+    font-family: $secondary-font;
+    color: $accent-color-text;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.33;
+    text-align: center;
+    padding-top: 220px;
+    padding-bottom: 340px
+}
+
+.hero {
+    
+    background-image: linear-gradient(to top,
+                $shadow-hero-section),
+            url('/images/hero.jpg');
+            background-repeat: no-repeat;
+}
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(to top,
+                        $shadow-hero-section),
+                    url('/images/hero@2x.jpg');
+            }
+        }
+
+.hero__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 129px;
+}
+
+.hero__address {
+    font-family: $primary-font;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-right: 98px;
+}
+
+.hero__tel {
+    @extend %link;
+    color: $primary-color-text;
+}
+
