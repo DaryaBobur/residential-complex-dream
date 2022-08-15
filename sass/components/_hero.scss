@@ -13,7 +13,7 @@
     
     background-image: linear-gradient(to top,
                 $shadow-hero-section),
-            url('/images/hero.jpg');
+            url('../images/hero.jpg');
             background-repeat: no-repeat;
 }
 
@@ -23,7 +23,7 @@
             .hero {
                 background-image: linear-gradient(to top,
                         $shadow-hero-section),
-                    url('/images/hero@2x.jpg');
+                    url('../images/hero@2x.jpg');
             }
         }
 
@@ -38,6 +38,8 @@
 }
 
 .hero__address {
+    display: flex;
+    align-items: center;
     font-family: $primary-font;
     font-style: normal;
     font-size: 18px;
@@ -46,8 +48,16 @@
     margin-right: 98px;
 }
 
-.hero__tel {
+.hero__tel, .hero__link {
+    display: flex;
+    align-items: center;
     @extend %link;
     color: $primary-color-text;
+}
+
+.hero__icon {
+    margin-right: 14px;
+    fill: $primary-color-text;
+
 }
 
