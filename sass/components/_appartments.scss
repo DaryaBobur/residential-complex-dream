@@ -3,7 +3,61 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.33;
-    
+    margin-bottom: 100px;
     color: $accent-color-text;
 }
 
+.appartments__list {
+    @extend %list;
+display: flex;
+flex-wrap: wrap;
+margin-left: -30px;
+margin-bottom: -30px;
+}
+
+.appartments__item {
+    position: relative;
+  flex-basis: calc((100% - 4 * 15px) / 2);
+        margin-left: 30px;
+        margin-bottom: 30px;
+        
+}
+
+.appartments__img {
+width: 100%;
+height: auto;
+}
+
+.appartments__item:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+
+.appartments__info {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 2;
+
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+.appartments__text {
+    font-family: 'Playfair Display';
+        position: absolute;
+        left: 5px;
+        top: -70px;
+        font-weight: 700;
+        font-size: 400px;
+        line-height: 1.33;
+    
+        color: $primary-color-text;
+    
+        opacity: 0.02;
+}
