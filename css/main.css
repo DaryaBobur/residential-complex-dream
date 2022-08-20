@@ -281,4 +281,53 @@ header {
   max-width: 650px;
   font-size: 16px;
   line-height: 1.5;
+  margin-right: 35px;
+}
+
+.description__wrap {
+  display: flex;
+}
+
+.form__input {
+  font-size: 14px;
+  line-height: 1.93;
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  max-width: 255px;
+  border: 0;
+  margin-bottom: 35px;
+  background: #BEBEBE;
+  opacity: 0.4;
+}
+
+.form__input:not(:last-child) {
+  margin-right: 30px;
+}
+
+.form__text {
+  font-size: 13px;
+  line-height: 1.23;
+  margin-right: 30px;
+  color: #E7E7E7;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+}
+
+.btn-desc {
+  display: inline-block;
+  min-width: 255px;
+  border: 0;
+  padding: 12px 54px 11px;
+  color: #FFFFFF;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.69;
+  background-color: #D4C17F;
+  cursor: pointer;
 }
