@@ -1,0 +1,32 @@
+.map {
+    position: relative;
+    padding-bottom: 180px;
+}
+
+.map__title {
+    font-family: 'Playfair Display';
+ 
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.33;
+    
+        color: $accent-color-text;
+
+        margin-bottom: 100px;
+}
+
+.map__text {
+    position: absolute;
+    left: 5px;
+    top: -60px;
+    font-family: 'Playfair Display';
+    
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 1.33;
+    
+    color: $primary-color-text;
+    
+        opacity: 0.02;
+}
+
