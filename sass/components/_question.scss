@@ -1,3 +1,7 @@
+.question {
+    padding-bottom: 180px;
+}
+
 .question__title {
     font-family: 'Playfair Display';
      
@@ -8,4 +12,51 @@
         color: $accent-color-text;
 
         margin-bottom: 50px;
+}
+
+.question__text {
+    font-size: 13px;
+        line-height: 1.23;
+        text-align: center;
+        color: $secondary-color-text;
+
+        margin-right: 35px;
+}
+
+.question__form {
+    display: flex;
+}
+
+.question__input {
+    margin-right: 30px;
+
+    font-size: 14px;
+        line-height: 1.93;
+        color: $placeholder-color;
+    
+        padding-top: 12px;
+        padding-bottom: 11px;
+        padding-left: 15px;
+        min-width: 255px;
+        border: 0;
+    
+        background-color: $primary-color-text;
+        opacity: 0.4;
+}
+
+.btn__question {
+  display: inline-block;
+    min-width: 255px;
+    border: 0;
+    padding: 12px 53px 11px;
+
+    color: $primary-color-text;
+  
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.69;
+
+    background-color: $accent-color-text;
+    cursor: pointer;
 }
