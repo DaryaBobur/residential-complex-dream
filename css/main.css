@@ -324,7 +324,7 @@ header {
 
 .btn-desc {
   display: inline-block;
-  min-width: 205px;
+  min-width: 255px;
   border: 0;
   padding: 12px 4px 11px;
   color: #FFFFFF;
@@ -362,6 +362,10 @@ header {
   opacity: 0.02;
 }
 
+.question {
+  padding-bottom: 180px;
+}
+
 .question__title {
   font-family: 'Playfair Display';
   font-weight: 700;
@@ -369,4 +373,44 @@ header {
   line-height: 48px;
   color: #D4C17F;
   margin-bottom: 50px;
+}
+
+.question__text {
+  font-size: 13px;
+  line-height: 1.23;
+  text-align: center;
+  color: #E7E7E7;
+  margin-right: 35px;
+}
+
+.question__form {
+  display: flex;
+}
+
+.question__input {
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 1.93;
+  color: #BEBEBE;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  min-width: 255px;
+  border: 0;
+  background-color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.btn__question {
+  display: inline-block;
+  min-width: 255px;
+  border: 0;
+  padding: 12px 53px 11px;
+  color: #FFFFFF;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.69;
+  background-color: #D4C17F;
+  cursor: pointer;
 }
