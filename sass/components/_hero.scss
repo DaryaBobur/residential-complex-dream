@@ -48,7 +48,8 @@
     margin-right: 98px;
 }
 
-.hero__tel, .hero__link {
+.hero__tel, 
+.hero__link {
     display: flex;
     align-items: center;
     @extend %link;
