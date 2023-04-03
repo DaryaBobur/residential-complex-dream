@@ -1,76 +1,78 @@
 .description {
-    padding-top: 180px;
-    padding-bottom: 180px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 
-    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../images/flat-bg.jpg), #C4C4C4;
-    background-repeat: no-repeat;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../images/flat-bg.jpg), #C4C4C4;
+  background-repeat: no-repeat;
 }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .description {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       .description {
-            @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .description {
-                background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../images/flat-bg.jpg), #C4C4C4;
-            }
-        }
+        background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../images/flat-bg.jpg), #C4C4C4;
       }
-  }
-
-  .description__title {
-    font-family: 'Playfair Display';
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.33;
-
-    color: $accent-color-text;
-
-    margin-bottom: 50px;
-  }
-
-  .description__text {
-    max-width: 535px;
-    font-size: 16px;
-    line-height: 1.5;
-
-    margin-right: 35px;
-  }
-
-  .description__wrap {
-    display: flex;
-  }
-
-  .form__input {
-    font-size: 14px;
-    line-height: 1.93;
-    color: black;
-
-    padding-top: 12px;
-    padding-bottom: 11px;
-    padding-left: 15px;
-    min-width: 255px;
-    border: 0;
-    margin-bottom: 35px;
-
-    background: $placeholder-color;
-    opacity: 0.4;
-
-    &:not(:last-child) {
-      margin-right: 30px;
     }
   }
+}
 
- .form__text {
+.description__title {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+
+  color: $accent-color-text;
+
+  margin-bottom: 50px;
+}
+
+.description__text {
+  max-width: 535px;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin-right: 35px;
+}
+
+.description__wrap {
+  display: flex;
+}
+
+.form__input {
+  font-size: 14px;
+  line-height: 1.93;
+  font-weight: 700;
+  color: #000000;
+
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  min-width: 255px;
+  border: 0;
+  margin-bottom: 35px;
+
+  background: $placeholder-color;
+  opacity: 0.4;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.form__text {
   font-size: 13px;
   line-height: 1.23;
   margin-right: 30px;
   max-width: 260px;
   color: $secondary-color-text;
- }
-  
+}
+
 .desc {
   display: flex;
 
@@ -78,17 +80,25 @@
 
 .btn-desc {
   display: inline-block;
-    min-width: 255px;
-    border: 0;
-    padding: 12px 4px 11px;
+  min-width: 255px;
+  border: 0;
+  padding: 12px 4px 11px;
 
-    color: $primary-color-text;
-  
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.69;
+  color: $primary-color-text;
 
-    background-color: $accent-color-text;
-    cursor: pointer;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.69;
+
+  background-color: $accent-color-text;
+  cursor: pointer;
+  transition: background-color 550ms cubic-bezier(0.4, 0, 0.2, 1), 
+  color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-desc:hover,
+.btn-desc:focus {
+  background-color: #424547;
+  color: $accent-color-text;
 }
