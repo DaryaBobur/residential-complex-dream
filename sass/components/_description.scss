@@ -78,7 +78,7 @@
 
 }
 
-.btn-desc {
+.btn__desc {
   display: inline-block;
   min-width: 255px;
   border: 0;
@@ -93,12 +93,12 @@
 
   background-color: $accent-color-text;
   cursor: pointer;
-  transition: background-color 550ms cubic-bezier(0.4, 0, 0.2, 1), 
-  color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 550ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-desc:hover,
-.btn-desc:focus {
+.btn__desc:hover,
+.btn__desc:focus {
   background-color: #424547;
   color: $accent-color-text;
 }
