@@ -17,12 +17,17 @@
     margin-bottom: 15px;
 }
 
-.footer-contact__item {
+.footer-contact__item,
+.footer-icon__item {
     @extend %list;
 }
 
 .footer-contact__item:not(:last-child) {
     margin-bottom: 15px;
+}
+
+.footer-icon__item:not(:last-child) {
+    margin-right: 21px;
 }
 
 .footer-contact__data {
@@ -33,4 +38,25 @@
     line-height: 1.14;
     letter-spacing: 0.05em;
     color: $primary-color-text;
+}
+
+.footer-icon {
+    display: flex;
+    margin-top: 21px;
+
+}
+
+
+.footer-icon__link {
+    fill: $primary-color-text;
+}
+
+.footer-icon__icon {
+    fill: inherit;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon__icon:hover,
+.footer-icon__icon:focus {
+    fill: $accent-color-text;
 }
